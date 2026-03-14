@@ -1,0 +1,180 @@
+body {
+    background: #1abc9c;
+    font-family: Tahoma, Arial, sans-serif;
+    color: #ffffff;
+}
+
+.header img {
+    display: block;
+    width: 318px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.archive {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.post-title a {
+    color: #ffffff;
+}
+
+.article-author {
+    width: 50%;
+    float: left;
+}
+
+.article-created-date {
+    text-align: right;
+}
+
+/* Стили для страницы отдельной статьи */
+.article {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.article .one-post {
+    background: white;
+    color: #333;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.article .post-title {
+    margin: 0 0 10px 0;
+}
+
+.article .article-info {
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.article .article-text {
+    text-align: justify;
+}
+
+.article a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.article a:hover {
+    text-decoration: underline;
+}
+/* Стили для страницы создания статьи */
+.content {
+    width: 960px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    color: #333;
+}
+
+.content h1 {
+    margin-top: 0;
+}
+
+.content input[type=text],
+.content textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 14px;
+}
+
+.content textarea {
+    height: 200px;
+    resize: vertical;
+}
+
+.content input[type=submit] {
+    background: #1abc9c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.content input[type=submit]:hover {
+    background: #16a085;
+}
+
+.errors {
+    margin-top: 10px;
+    color: #e74c3c;
+}
+/* Стили для страниц регистрации и входа (дополнение к уже существующим) */
+.content input[type=email] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 14px;
+}
+
+.content input[type=password] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 14px;
+}
+/* Стили для блока авторизации в шапке */
+.header {
+    position: relative;
+    margin-bottom: 20px;
+}
+.header .auth-links {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    color: white;
+}
+.header .auth-links a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+}
+.header .auth-links a:hover {
+    text-decoration: underline;
+}
+.header .auth-links span {
+    margin-right: 10px;
+}
+.one-post.folded .article-author,
+.one-post.folded .article-created-date,
+.one-post.folded .article-text {
+    display: none;
+}
+.one-post {
+    position: relative; /* чтобы подложка позиционировалась относительно родителя */
+}
+
+.one-post-shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: black;
+    z-index: -1;
+    opacity: 0; /* изначально прозрачна */
+}
